@@ -1,0 +1,97 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Reselect",
+	"scopeName": "source.reselect",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#builtins"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#numerics"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.reselect",
+					"match": "\\b(if|then|elseif|else|let|in|end)\\b"
+				},
+				{
+					"name": "keyword.operator.wordlike.reselect",
+					"match": "\\b(and|or|not)\\b"
+				},
+				{
+					"name": "keyword.operator.reselect",
+					"match": "\\+|-|\\*|\\/|==|!=|<=?|>=?|:="
+				},
+				{
+					"name": "invalid.illegal",
+					"match": "(?<![=!<>:])="
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.reselect",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.reselect",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numerics": {
+			"patterns": [
+				{
+					"name": "constant.numeric.decimal.reselect",
+					"match": "(?<![\\w\\d.])\\d*\\.\\d+([eE]-?\\d*)?"
+				},
+				{
+					"name": "constant.numeric.integer.dec.reselect",
+					"match": "(?<![\\w\\d.])\\d+"
+				},
+				{
+					"name": "constant.numeric.integer.hex.reselect",
+					"match": "(?<![\\w\\d.])0[xX][0-9A-Fa-f]+"
+				}
+			]
+		},
+		"comments": {
+			"begin": "--",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.definition.comment.reselect"
+				}
+			},
+			"end": "\\n",
+			"name": "comment.line.double-dash.reselect"
+		},
+		"builtins": {
+			"patterns": [
+				{
+					"name": "support.function",
+					"match": "\\b(contains|lowercase|matches|rand|seed|x|y|z|biome|hasname|name|isbaby|health)\\b"		
+				},
+				{
+					"name": "support.variable",
+					"match": "\\b(axolotl|bat|bee|blaze|cat|cave_spider|chicken|cod|cow|creeper|dolphin|donkey|drowned|elder_guardian|ender_dragon|enderman|endermite|evoker|fox|ghast|giant|glow_squid|goat|guardian|hoglin|horse|husk|illusioner|iron_golem|llama|magma_cube|mooshroom|mule|ocelot|panda|parrot|phantom|pig|piglin|piglin_brute|pillager|polar_bear|pufferfish|rabbit|ravager|salmon|sheep|shulker|silverfish|skeleton|skeleton_horse|slime|snow_golem|spider|strider|squid|stray|trader_llama|tropical_fish|turtle|vex|villager|vindicator|wandering_trader|witch|wither|wither_skeleton|wolf|zoglin|zombie|zombie_horse|zombie_villager|zombified_piglin)\\b"
+				},
+				{
+					"name": "support.variable",
+					"match": "\\b(default)\\b"
+				}
+			]
+		}
+	}
+}

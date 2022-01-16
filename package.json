@@ -1,0 +1,26 @@
+{
+    "name": "reselect-lang",
+    "displayName": "Reselect Lang",
+    "description": "Syntax highlighting for Reselect",
+    "version": "1.0.0",
+    "license": "GPL-3.0-or-later",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "reselect",
+            "aliases": ["Reselect", "reselect"],
+            "extensions": [".reselect"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "reselect",
+            "scopeName": "source.reselect",
+            "path": "./syntaxes/reselect.tmLanguage.json"
+        }]
+    }
+}
