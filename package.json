@@ -5,6 +5,7 @@
     "version": "1.0.0",
     "license": "GPL-3.0-or-later",
     "icon": "images/icon.png",
+    "publisher": "digifox03",
     "homepage": "https://github.com/Digifox03/reselect-vscode",
     "bugs": {
         "url": "https://github.com/Digifox03/reselect-vscode/issues",
