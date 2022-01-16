@@ -1,9 +1,19 @@
 {
     "name": "reselect-lang",
-    "displayName": "Reselect Lang",
+    "displayName": "Reselect Language",
     "description": "Syntax highlighting for Reselect",
     "version": "1.0.0",
     "license": "GPL-3.0-or-later",
+    "icon": "images/icon.png",
+    "homepage": "https://github.com/Digifox03/reselect-vscode",
+    "bugs": {
+        "url": "https://github.com/Digifox03/reselect-vscode/issues",
+        "email": "digifox03@protonmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Digifox03/reselect-vscode"
+    },
     "engines": {
         "vscode": "^1.63.0"
     },
