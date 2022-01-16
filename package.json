@@ -2,7 +2,7 @@
     "name": "reselect-lang",
     "displayName": "Reselect Language",
     "description": "Syntax highlighting for Reselect",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "GPL-3.0-or-later",
     "icon": "images/icon.png",
     "publisher": "digifox03",
@@ -16,7 +16,7 @@
         "url": "https://github.com/Digifox03/reselect-vscode"
     },
     "engines": {
-        "vscode": "^1.63.0"
+        "vscode": "^1.62.0"
     },
     "categories": [
         "Programming Languages"
