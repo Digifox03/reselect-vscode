@@ -2,7 +2,7 @@
 
 Support for the Reselect language provided by the Reselect Minecraft mod.
 
-The currently reselect version supported is `v0.2.0-alpha.5`
+The currently reselect version supported is `v0.3.0`.
 
 ## Features
 
@@ -11,7 +11,8 @@ The currently reselect version supported is `v0.2.0-alpha.5`
 
 ## Planned features
 
-- File location aware highlighting
-- Warning for misplaced files in resource packs
-- Code formatter
-- Code linting for common mistakes
+- Autocompletion for function names.
+- File location aware highlighting.
+- Warning for misplaced files in resource packs.
+- Code formatter.
+- Code linting for common mistakes.
