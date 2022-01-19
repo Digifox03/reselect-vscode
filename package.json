@@ -21,6 +21,10 @@
     "categories": [
         "Programming Languages"
     ],
+    "main": "./out/extension.js",
+    "activationEvents": [
+        "onLanguage:reselect"
+    ],
     "contributes": {
         "languages": [{
             "id": "reselect",
@@ -33,5 +37,21 @@
             "scopeName": "source.reselect",
             "path": "./syntaxes/reselect.tmLanguage.json"
         }]
-    }
+    },
+    "scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"lint": "eslint src --ext ts"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.63.0",
+		"@types/glob": "^7.2.0",
+		"@types/node": "14.x",
+		"@typescript-eslint/eslint-plugin": "^5.9.1",
+		"@typescript-eslint/parser": "^5.9.1",
+		"eslint": "^8.6.0",
+		"glob": "^7.2.0",
+		"typescript": "^4.5.4"
+	}
 }
