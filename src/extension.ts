@@ -1,3 +1,4 @@
+import path from 'path';
 import * as vscode from 'vscode';
 
 import entities from './entities.json';
@@ -43,8 +44,8 @@ class ParameterProvider implements vscode.CompletionItemProvider {
 		if (document.isUntitled) {
 			return [defaultCompletion, ...allEntities];
 		}
-		let entityName = document.fileName.replace("[.][^.]+$", "");	
-		if (entityName in entities) {
+		let entityName = path.basename(document.fileName, ".reselect");
+		if (entities.includes(entityName)) {
 			const completion = new vscode.CompletionItem(
 				entityName, vscode.CompletionItemKind.Variable
 			);
