@@ -5,6 +5,13 @@ All notable changes to the Reselect Language extension will be documented in thi
 The format is based on [Keep a Changelog],
 and this project adheres to [Semantic Versioning].
 
+## 1.2.0 - 2022-01-21
+### Added
+- Autocompletion
+- Indentation rules
+### Fixed
+- corrected `biome` in `current_biome`
+
 ## 1.1.0 - 2022-01-17
 ### Added
 - Support for reselect version 0.3.0.
