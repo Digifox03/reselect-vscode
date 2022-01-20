@@ -81,7 +81,7 @@
 			"patterns": [
 				{
 					"name": "support.function",
-					"match": "\\b(contains|lowercase|matches|rand|seed|x|y|z|biome|has_name|name|is_baby|health|axolotl_variant|cat_type|fox_type|horse_color|horse_marking|mooshroom_type|panda_gene|parrot_variant|rabbit_variant|sheep_color|shulker_color|tropical_fish_base|tropical_fish_pattern|tropical_fish_variant|collar_color|is_tamed)\\b"		
+					"match": "\\b(contains|lowercase|matches|rand|seed|x|y|z|current_biome|has_name|name|is_baby|health|axolotl_variant|cat_type|fox_type|horse_color|horse_marking|mooshroom_type|panda_gene|parrot_variant|rabbit_variant|sheep_color|shulker_color|tropical_fish_base|tropical_fish_pattern|tropical_fish_variant|collar_color|is_tamed)\\b"		
 				},
 				{
 					"name": "support.variable",
